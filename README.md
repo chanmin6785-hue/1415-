@@ -51,7 +51,7 @@ node tests/verify-world.cjs
 - 한국어 중계 문장은 재구성입니다. 기록에 없는 슈팅, 팬 발언, 관중 수치, 협상 확률, 여론 비율은 창작하지 않았습니다.
 - 기자의 기사 전체를 복제하지 않았습니다. 선별 기사 날짜·매체·짧은 요약·원문 링크만 제공합니다. 각 기사에만 나타난 반응을 전체 여론으로 일반화하지 않습니다.
 - 이적시장은 호날두 2009, 네이마르 2017, 메시 2021의 선별 에피소드입니다. 모든 이적설을 제공하지 않습니다.
-- 당시의 모든 공식 엠블럼과 모든 시즌 스쿼드는 미수록입니다. 기존 아카이브의 이니셜 방패는 공식 엠블럼이 아닙니다.
+- 현재 식별용 엠블럼 1,262개와 국기 209개를 수록합니다. 과거 연도의 디자인을 검증한 자료는 아니며, 엠블럼이 없으면 국기 또는 식별용 이니셜을 구분해 표시합니다. 모든 시즌 스쿼드는 미수록입니다.
 
 ## 출처
 
@@ -119,3 +119,11 @@ node tests/verify-world.cjs
 - 출처: https://github.com/dcaribou/transfermarkt-datasets (CC0), 배포 사본 https://www.kaggle.com/datasets/davidcariboo/player-scores . `scripts/fetch_players.py`와 `scripts/build_players.py`로 재생성합니다.
 
 검증: `node tests/verify-players.cjs` — 512개 파일의 정합성, 날짜 경계, 미래 이적 제외, 최신 스냅샷 통계 미포함 확인.
+
+## 한국어 이름과 엠블럼
+
+- 선수 한국어 이름 9,997명을 추가하고, 팀·국가·65개 대회 이름을 한국어로 표시합니다. 확인된 한국어 표기가 없으면 원문을 유지합니다. 영문 원래 이름 검색도 지원합니다.
+- 경기 카드, 리그 순위표, 대진표, 문자중계, 선수의 소속 이동·출전 기록에서 로컬 엠블럼을 사용합니다. 현재 디자인임을 표시하며 당시 디자인으로 오인하지 않게 안내합니다.
+- 이름 번역은 화면 표시 계층에만 적용합니다. 원본 선수/클럽 ID, 경기 매칭, 날짜별 결과 공개와 미래 이적 숨김 규칙은 유지합니다.
+- 한국어 표기: Wikidata (P2446/P7223, CC0), mledoze/countries, korean-football-team-names. 엠블럼: Transfermarkt CDN 및 JoseArroyave/football-logos. 국기: FlagCDN. 개별 출처와 권리는 `licenses/NOTICE.md` 참고.
+- 선수 이름 수집: `python scripts/fetch_korean_players.py`. `research/localization/`의 원본 팀·국가 자료와 crest manifest를 확보한 뒤 `build_localization.py` → `extend_crest_assets.py` → `apply_korean_overrides.py` 순으로 실행합니다. 검증은 `node tests/verify-localization.cjs`입니다.
