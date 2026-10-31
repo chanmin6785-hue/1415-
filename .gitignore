@@ -1,0 +1,16 @@
+research/
+*.png
+!dist/assets/*.png
+/qa*.cjs
+/build_replay.py
+/enrich_ucl.py
+/make_stories.py
+/make_data.py
+/assets_fetch.py
+/verify-replay.cjs
+node_modules/
+.DS_Store
+.openai/
+
+__pycache__/
+dist/crests.json
