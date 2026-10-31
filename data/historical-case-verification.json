@@ -1,0 +1,212 @@
+[
+  {
+    "id": "lima-stadium",
+    "date": "1964-05-24",
+    "source": "https://en.wikipedia.org/wiki/Estadio_Nacional_disaster",
+    "dateEvidence": "1964-05-24",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "kayseri-stadium",
+    "date": "1967-09-17",
+    "source": "https://en.wikipedia.org/wiki/1967_Kayseri_Atat%C3%BCrk_Stadium_disaster",
+    "dateEvidence": "1967-09-17",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "football-war",
+    "date": "1969-07-14",
+    "source": "https://en.wikipedia.org/wiki/Football_War",
+    "dateEvidence": "14 July 1969",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "ibrox-disaster",
+    "date": "1971-01-02",
+    "source": "https://en.wikipedia.org/wiki/1971_Ibrox_disaster",
+    "dateEvidence": "1971-01-02",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "karaiskakis-disaster",
+    "date": "1981-02-08",
+    "source": "https://en.wikipedia.org/wiki/Karaiskakis_Stadium_disaster",
+    "dateEvidence": "1981-02-08",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "luzhniki-disaster",
+    "date": "1982-10-20",
+    "source": "https://en.wikipedia.org/wiki/Luzhniki_disaster",
+    "dateEvidence": "1982-10-20",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "bradford-fire",
+    "date": "1985-05-11",
+    "source": "https://en.wikipedia.org/wiki/Bradford_City_stadium_fire",
+    "dateEvidence": "1985-05-11",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "heysel-disaster",
+    "date": "1985-05-29",
+    "source": "https://en.wikipedia.org/wiki/Heysel_Stadium_disaster",
+    "dateEvidence": "1985-05-29",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "hillsborough-disaster",
+    "date": "1989-04-15",
+    "source": "https://en.wikipedia.org/wiki/Hillsborough_disaster",
+    "dateEvidence": "1989-04-15",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "furiani-disaster",
+    "date": "1992-05-05",
+    "source": "https://en.wikipedia.org/wiki/Furiani_disaster",
+    "dateEvidence": "1992-05-05",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "andres-escobar",
+    "date": "1994-07-02",
+    "source": "https://en.wikipedia.org/wiki/Andr%C3%A9s_Escobar",
+    "dateEvidence": "1994-07-02",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "cantona-incident",
+    "date": "1995-01-25",
+    "source": "https://en.wikipedia.org/wiki/Eric_Cantona",
+    "dateEvidence": "25 January 1995",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "copenhagen-riots",
+    "date": "2000-05-17",
+    "source": "https://en.wikipedia.org/wiki/2000_UEFA_Cup_final_riots",
+    "dateEvidence": "17 May 2000",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "ellis-park-disaster",
+    "date": "2001-04-11",
+    "source": "https://en.wikipedia.org/wiki/Ellis_Park_Stadium_disaster",
+    "dateEvidence": "2001-04-11",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "accra-stadium",
+    "date": "2001-05-09",
+    "source": "https://en.wikipedia.org/wiki/Accra_Sports_Stadium_disaster",
+    "dateEvidence": "9 May 2001",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "saipan-incident",
+    "date": "2002-05-23",
+    "source": "https://en.wikipedia.org/wiki/Saipan_incident",
+    "dateEvidence": "23 May 2002",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "calciopoli-first-ruling",
+    "date": "2006-07-14",
+    "source": "https://en.wikipedia.org/wiki/Calciopoli",
+    "dateEvidence": "14 July 2006",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "beach-ball-goal",
+    "date": "2009-10-17",
+    "source": "https://en.wikipedia.org/wiki/2009%E2%80%9310_Sunderland_A.F.C._season",
+    "dateEvidence": "17 October 2009",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "togo-team-attack",
+    "date": "2010-01-08",
+    "source": "https://en.wikipedia.org/wiki/Togo_national_football_team_attack",
+    "dateEvidence": "8 January 2010",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "port-said-riot",
+    "date": "2012-02-01",
+    "source": "https://en.wikipedia.org/wiki/Port_Said_Stadium_riot",
+    "dateEvidence": "1 February 2012",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "paris-stadium-attacks",
+    "date": "2015-11-13",
+    "source": "https://en.wikipedia.org/wiki/November_2015_Paris_attacks",
+    "dateEvidence": "13 November 2015",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "dortmund-bus-attack",
+    "date": "2017-04-11",
+    "source": "https://en.wikipedia.org/wiki/Borussia_Dortmund_team_bus_bombing",
+    "dateEvidence": "11 April 2017",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "leicester-helicopter",
+    "date": "2018-10-27",
+    "source": "https://en.wikipedia.org/wiki/2018_Leicester_helicopter_crash",
+    "dateEvidence": "27 October 2018",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "emiliano-sala-crash",
+    "date": "2019-01-21",
+    "source": "https://en.wikipedia.org/wiki/2019_English_Channel_Piper_PA-46_crash",
+    "dateEvidence": "21 January 2019",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "kanjuruhan-disaster",
+    "date": "2022-10-01",
+    "source": "https://en.wikipedia.org/wiki/Kanjuruhan_Stadium_disaster",
+    "dateEvidence": "1 October 2022",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "rubiales-kiss",
+    "date": "2023-08-20",
+    "source": "https://en.wikipedia.org/wiki/Rubiales_affair",
+    "dateEvidence": "2023-08-20",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "zamalek-stadium",
+    "date": "1974-02-17",
+    "source": "https://en.wikipedia.org/wiki/Zamalek_Stadium_disaster",
+    "dateEvidence": "1974-02-17",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "guatemala-stadium",
+    "date": "1996-10-16",
+    "source": "https://en.wikipedia.org/wiki/Estadio_Doroteo_Guamuch_Flores_disaster",
+    "dateEvidence": "1996-10-16",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "turkey-fixing-investigation",
+    "date": "2011-07-03",
+    "source": "https://en.wikipedia.org/wiki/2011_Turkish_football_match-fixing_scandal",
+    "dateEvidence": "2011-07-03",
+    "method": "retrieved-source-date-check"
+  },
+  {
+    "id": "chapecoense-crash",
+    "date": "2016-11-28",
+    "source": "https://en.wikipedia.org/wiki/LaMia_Flight_2933",
+    "dateEvidence": "2016-11-28",
+    "method": "retrieved-source-date-check"
+  }
+]

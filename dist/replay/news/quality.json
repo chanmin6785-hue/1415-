@@ -1,0 +1,435 @@
+{
+  "snapshot": "2026-10-31",
+  "grains": {
+    "editorial": "one checked publication and Korean editorial summary",
+    "archive": "one deduplicated article URL and source publication day",
+    "history": "one source-described event and exact event day"
+  },
+  "stats": {
+    "editorialReports": 137,
+    "archiveLinks": 210583,
+    "historicalRecords": 5222,
+    "datedEditions": 10196,
+    "sourceOrganizations": 63,
+    "localizedIndexTitles": 100091,
+    "originalTitleFallbacks": 110492,
+    "nameLocalizedIndexTitles": 64553,
+    "bySource": {
+      "The Guardian": 208866,
+      "The Observer": 2,
+      "Wikinews": 487,
+      "Sky Sports": 166,
+      "Daily Express": 143,
+      "Marca": 114,
+      "Mundo Deportivo": 172,
+      "Manchester Evening News": 30,
+      "Diario AS": 29,
+      "Talksport": 68,
+      "The Sun": 78,
+      "ESPN": 13,
+      "Metro": 114,
+      "Sapo": 10,
+      "Goal": 84,
+      "Football 365": 2,
+      "Sports Mole": 14,
+      "ABC": 1,
+      "Estadio Deportivo": 5,
+      "HITC": 11,
+      "Independent": 5,
+      "Diario de Sevilla": 1,
+      "Teamtalk": 4,
+      "Correio da Manhã": 4,
+      "Fichajes.com": 103,
+      "Chronicle Live": 2,
+      "Sport Witness": 9,
+      "Don Balon": 4,
+      "Sports Illustrated": 1,
+      "Daily Post": 1,
+      "Fichajes.net": 5,
+      "Deporte Valenciano": 1,
+      "Diario Gol": 1,
+      "Diário de Notícias": 1,
+      "90 min": 1,
+      "Liverpool Echo": 4,
+      "The Hard Tackle": 1,
+      "Read Chelsea": 1,
+      "Liverpool Offside": 1,
+      "Talk Chelsea": 1,
+      "BBC": 3,
+      "SDP Noticias": 1,
+      "Futebol 365": 4,
+      "Caughtoffside": 2,
+      "A Bola": 3,
+      "Maisfutebol": 1,
+      "Leicestershire Live": 1,
+      "Yahoo Sport": 1,
+      "Fox Sports": 1,
+      "Daily Echo": 1,
+      "FanSided": 1,
+      "London Evening Standard": 1,
+      "El Español": 1,
+      "Bleacher Report": 1,
+      "Record": 1
+    },
+    "byType": {
+      "historical-reprint": 17,
+      "guardian-index": 208850,
+      "wikinews": 487,
+      "transfer-index": 1229
+    },
+    "dateEvidence": {
+      "original-print-date-in-publisher-reprint": 17,
+      "publisher-daily-archive": 208850,
+      "published-dateline": 487,
+      "FTR-18-publication-date": 1229
+    },
+    "monthlyDataBytes": 94637185,
+    "largestMonthBytes": 645284,
+    "coverageByYear": {
+      "1956": {
+        "events": 2
+      },
+      "1957": {
+        "events": 12
+      },
+      "1958": {
+        "events": 17
+      },
+      "1959": {
+        "events": 4
+      },
+      "1960": {
+        "articles": 1,
+        "events": 1
+      },
+      "1961": {
+        "events": 6
+      },
+      "1962": {
+        "articles": 1,
+        "events": 5
+      },
+      "1963": {
+        "events": 28
+      },
+      "1964": {
+        "articles": 1,
+        "events": 16
+      },
+      "1965": {
+        "events": 9
+      },
+      "1966": {
+        "articles": 1,
+        "events": 4
+      },
+      "1967": {
+        "events": 4
+      },
+      "1968": {
+        "events": 4
+      },
+      "1969": {
+        "events": 3
+      },
+      "1970": {
+        "articles": 1,
+        "events": 1
+      },
+      "1971": {
+        "events": 14
+      },
+      "1972": {
+        "events": 14
+      },
+      "1973": {
+        "events": 10
+      },
+      "1974": {
+        "events": 38
+      },
+      "1975": {
+        "events": 41
+      },
+      "1976": {
+        "events": 42
+      },
+      "1977": {
+        "articles": 1,
+        "events": 37
+      },
+      "1978": {
+        "events": 17
+      },
+      "1979": {
+        "events": 41
+      },
+      "1980": {
+        "articles": 1,
+        "events": 44
+      },
+      "1981": {
+        "articles": 1,
+        "events": 41
+      },
+      "1982": {
+        "articles": 1,
+        "events": 81
+      },
+      "1983": {
+        "articles": 1,
+        "events": 121
+      },
+      "1984": {
+        "events": 134
+      },
+      "1985": {
+        "articles": 3,
+        "events": 74
+      },
+      "1986": {
+        "events": 87
+      },
+      "1987": {
+        "events": 163
+      },
+      "1988": {
+        "articles": 1,
+        "events": 148
+      },
+      "1989": {
+        "articles": 1,
+        "events": 145
+      },
+      "1990": {
+        "events": 166
+      },
+      "1991": {
+        "articles": 1,
+        "events": 179
+      },
+      "1992": {
+        "articles": 1,
+        "events": 223
+      },
+      "1993": {
+        "events": 198
+      },
+      "1994": {
+        "events": 188
+      },
+      "1995": {
+        "events": 201
+      },
+      "1996": {
+        "events": 155
+      },
+      "1997": {
+        "events": 115
+      },
+      "1998": {
+        "articles": 712,
+        "events": 79
+      },
+      "1999": {
+        "articles": 4546,
+        "events": 102,
+        "editorials": 1
+      },
+      "2000": {
+        "articles": 4691,
+        "events": 51
+      },
+      "2001": {
+        "articles": 4713,
+        "events": 64
+      },
+      "2002": {
+        "articles": 5954,
+        "events": 104,
+        "editorials": 6
+      },
+      "2003": {
+        "articles": 5198,
+        "events": 90
+      },
+      "2004": {
+        "articles": 5833,
+        "events": 123,
+        "editorials": 2
+      },
+      "2005": {
+        "articles": 5523,
+        "events": 126,
+        "editorials": 5
+      },
+      "2006": {
+        "articles": 5885,
+        "events": 133,
+        "editorials": 2
+      },
+      "2007": {
+        "articles": 5632,
+        "events": 58
+      },
+      "2008": {
+        "articles": 5746,
+        "events": 11
+      },
+      "2009": {
+        "articles": 9420,
+        "events": 43,
+        "editorials": 15
+      },
+      "2010": {
+        "articles": 10238,
+        "events": 138,
+        "editorials": 2
+      },
+      "2011": {
+        "articles": 9050,
+        "events": 97,
+        "editorials": 2
+      },
+      "2012": {
+        "articles": 9186,
+        "events": 232,
+        "editorials": 13
+      },
+      "2013": {
+        "articles": 9633,
+        "events": 151,
+        "editorials": 8
+      },
+      "2014": {
+        "articles": 11294,
+        "events": 52,
+        "editorials": 6
+      },
+      "2015": {
+        "articles": 12593,
+        "events": 69,
+        "editorials": 5
+      },
+      "2016": {
+        "articles": 11136,
+        "events": 67,
+        "editorials": 8
+      },
+      "2017": {
+        "articles": 7736,
+        "events": 44,
+        "editorials": 13
+      },
+      "2018": {
+        "articles": 9165,
+        "events": 48,
+        "editorials": 6
+      },
+      "2019": {
+        "articles": 7671,
+        "events": 42,
+        "editorials": 4
+      },
+      "2020": {
+        "articles": 6544,
+        "events": 46,
+        "editorials": 7
+      },
+      "2021": {
+        "articles": 7131,
+        "events": 57,
+        "editorials": 15
+      },
+      "2022": {
+        "articles": 7266,
+        "events": 63,
+        "editorials": 8
+      },
+      "2023": {
+        "articles": 7379,
+        "events": 59,
+        "editorials": 3
+      },
+      "2024": {
+        "articles": 7350,
+        "events": 48,
+        "editorials": 4
+      },
+      "2025": {
+        "articles": 7020,
+        "events": 60,
+        "editorials": 2
+      },
+      "2026": {
+        "articles": 6321,
+        "events": 132
+      }
+    }
+  },
+  "sourceChecks": {
+    "guardianDaysAttempted": 10531,
+    "guardianCachedDays": 10531,
+    "guardianDaysUnavailable": 0,
+    "guardianStatusCounts": {
+      "ok": 10177,
+      "empty": 354
+    },
+    "FTR18BibliographySize": 4000,
+    "FTR18ResolvedMetadata": 1240,
+    "FTR18UnresolvedReasons": {
+      "network-unavailable": 1902,
+      "not-found": 324,
+      "access-unavailable": 448,
+      "publication-date-conflict": 29,
+      "unverified-metadata": 57
+    },
+    "wikinewsDatedArticles": 487,
+    "originalPrintReprints": 17,
+    "historyPagesUnavailable": 24
+  },
+  "checks": [
+    "unique record IDs and canonical article URLs",
+    "valid exact dates and monthly partition integrity",
+    "day-count reconciliation against all month files",
+    "no resolved rumour veracity or later destination labels",
+    "separate publication-day news and secondary-history event dates",
+    "match-specific and multi-match result spoiler gates",
+    "source attribution and explicit machine/original title labels",
+    "month-sized delivery budget and six-month browser cache"
+  ],
+  "limitations": [
+    {
+      "severity": "high",
+      "issue": "Coverage is not all football history or every publisher. Early newspaper access and non-English coverage are uneven.",
+      "remediation": "Add licensed newspaper archives or supplied historical clippings with original publication-date evidence."
+    },
+    {
+      "severity": "high",
+      "issue": "Historical article pages may have been updated after initial publication. The link index is the currently available publisher index, not a preserved as-published snapshot.",
+      "remediation": "Keep the index distinct from manually checked editorial reports and attach versioned archival evidence when available."
+    },
+    {
+      "severity": "medium",
+      "issue": "External translation became unavailable; untranslated index titles remain in their original language.",
+      "remediation": "Retain original titles and exact source URLs; rerun the resumable translator or import approved translations when access is restored."
+    },
+    {
+      "severity": "medium",
+      "issue": "A source-described historical date is not the same as a contemporary newspaper publication date.",
+      "remediation": "Display those records only in the separate historical timeline."
+    },
+    {
+      "severity": "medium",
+      "issue": "Unresolved or blocked source references are not silently treated as empty football days.",
+      "remediation": "Publish the recovery bibliography separately and exclude it from news totals."
+    }
+  ],
+  "reproducibleChecks": [
+    "node tests/verify-news.cjs",
+    "node tests/verify-replay.cjs",
+    "node tests/verify-world.cjs",
+    "node tests/verify-players.cjs"
+  ],
+  "dataBytesExcludingQualityReceipt": 95836021
+}

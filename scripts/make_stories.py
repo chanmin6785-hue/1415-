@@ -32,3 +32,8 @@ feature('mexico','1986-06-22','Argentina','England','월드컵 8강','아스테�
 wc=json.load(open(O/'cups/wc-2022.json'));m=next(m for m in wc['matches'] if m['stage']=='Final');features.append(dict(m,id='lusail',competition='월드컵 결승',title='루사일, 마지막 트로피를 향해',source='https://github.com/openfootball/worldcup.json/blob/master/2022/worldcup.json',duration=120))
 json.dump(dict(stories=stories,features=features),open(O/'stories.json','w'),ensure_ascii=False,separators=(',',':'))
 print(len(stories),'sourced reports;',len(features),'featured replays')
+
+# Preserve the checked editorial collection when regenerating featured replays.
+p=O/'news/editorial.json'
+if p.exists():
+ data=json.loads((O/'stories.json').read_text());data['stories']=json.loads(p.read_text());(O/'stories.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')))

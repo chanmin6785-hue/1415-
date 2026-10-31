@@ -9,6 +9,7 @@ python -m http.server 4173 --directory dist
 # http://localhost:4173
 node tests/verify-replay.cjs
 node tests/verify-world.cjs
+node tests/verify-news.cjs
 ```
 
 런타임 의존성, API 키, 서버 데이터베이스가 없습니다. GitHub Pages의 프로젝트 하위 경로에서도 상대 경로로 작동합니다.
@@ -36,11 +37,13 @@ node tests/verify-world.cjs
 | 월드컵 | 18개 본선 (1958–2026) |
 | 유로 | 17개 본선 (1960–2024, 1968 재경기 포함) |
 | 별도 연출 역사적 경기 | 8경기 |
-| 날짜별 기사/보도 요약 | 14건 |
+| 한국어로 정리한 주요 보도 | 137건 / 105개 날짜 |
+| 발행일별 원문 보도 색인 | 210,583건 |
+| 별도 사건·논란 연표 | 5,222건 / 1956–2026년 |
 
 월드컵/유로 경기는 A매치 자료에도 포함되므로 위 숫자를 단순 합산하면 중복입니다. 유럽 대회는 수록 범위 내 예선도 포함하되 2016/17 이후 원본 TXT는 본선 기준입니다. 본선 조 편성·단계는 수록되지만 과거의 모든 조 추첨 발표 시점은 없습니다. 최종 수집 기준: 2026-10-31. 2026/27 챔피언스리그는 미수록입니다.
 
-데이터는 `dist/replay/manifest.json`과 시즌/대회별 JSON 약 1,580개로 분할되어 있습니다. 페이지는 해당 연도·시즌 파일만 가져오며 전체 데이터 수십 MB를 한꺼번에 로드하지 않습니다. 원문 CSV는 배포하지 않습니다.
+경기·선수 자료는 시즌/대회/선수별로, 보도 자료는 696개 월별 JSON으로 분할했습니다. 보도 월별 파일은 최대 약 631KiB이며 브라우저는 최대 6개월만 캐시합니다. 보도 월별 데이터 약 90MiB, 전체 배포 파일 약 281MiB로 정적 배포에 수록했습니다. 원문 CSV나 신문 기사 전문은 배포하지 않습니다.
 
 ## 정확도와 연출
 
@@ -50,7 +53,10 @@ node tests/verify-world.cjs
 - 대진의 미래 참가 팀 공개는 이전 단계 경기 완료 기준입니다. 실제 조 추첨 발표 시각의 완전한 재현은 아닙니다.
 - 한국어 중계 문장은 재구성입니다. 기록에 없는 슈팅, 팬 발언, 관중 수치, 협상 확률, 여론 비율은 창작하지 않았습니다.
 - 기자의 기사 전체를 복제하지 않았습니다. 선별 기사 날짜·매체·짧은 요약·원문 링크만 제공합니다. 각 기사에만 나타난 반응을 전체 여론으로 일반화하지 않습니다.
-- 이적시장은 호날두 2009, 네이마르 2017, 메시 2021의 선별 에피소드입니다. 모든 이적설을 제공하지 않습니다.
+- 보도와 이적시장은 **선택한 날 발행된 기사만** 표시합니다. 카카·호날두·토레스·베일·손흥민·네이마르·메시·음바페·케인 등 여러 협상과 안정환/페루자 사건을 날짜별 주요 보도로 정리했습니다. 링크 색인에도 이적/이적설 필터가 있지만 제목 기반 분류이므로 오분류가 있을 수 있습니다. 모든 매체의 모든 이적설을 제공하지 않습니다.
+- 경기 결과가 들어갈 수 있는 보도는 해당 경기 관람 또는 하루 마감 후 공개합니다. 당일 기사의 실제 발행 시각까지 재현하는 기능은 아닙니다.
+- 당시 보도와 후대의 사건 정리를 분리합니다. 사건 연표는 별도 탭이며 하루 마감 후 공개합니다. 후대 자료에는 이후 밝혀진 정보가 포함될 수 있다는 안내를 표시합니다.
+- 약 20만 건의 색인은 기사 전문이나 모두 검토한 한국어 요약이 아닙니다. 번역된 색인 제목 100,091건, 나머지 원문 제목 110,492건 중 64,553건은 확인된 선수/팀 이름을 한국어로 표기했습니다. 각 카드에서 자동 번역·이름 표기·원문을 구분합니다. 자동 번역 오류가 있을 수 있습니다.
 - 현재 식별용 엠블럼 1,262개와 국기 209개를 수록합니다. 과거 연도의 디자인을 검증한 자료는 아니며, 엠블럼이 없으면 국기 또는 식별용 이니셜을 구분해 표시합니다. 모든 시즌 스쿼드는 미수록입니다.
 
 ## 출처
@@ -62,13 +68,15 @@ node tests/verify-world.cjs
 - [FootballCSV / europe-champions-league](https://github.com/footballcsv/europe-champions-league): 1955/56–2015/16 유럽 클럽 대회.
 - [OpenFootball / champions-league](https://github.com/openfootball/champions-league), CC0: 2016/17–2025/26 유럽 클럽 대회.
 - 개별 문자중계/보도 출처: `dist/replay/stories.json` 및 앱의 데이터 안내.
+- 대량 보도 색인: Guardian 일별 축구 아카이브, Wikinews 487건, FTR-18에서 원문 메타데이터를 확인하고 중복을 제거한 이적 보도 1,229건. 옛 신문 재수록 17건은 원래 지면 발행일과 웹 재게시일을 구분합니다.
+- 출처별·연도별 수록량과 미확인 자료: `dist/replay/news/index.json`, `quality.json`, `recovery-index.json`. 자세한 범위와 대안은 [DATA_COVERAGE.md](DATA_COVERAGE.md)를 참조하세요.
 - 경기장 분위기 사진: Unsplash `photo-1522778119026-d647f0596c20`. 특정 역사 경기의 현장 사진으로 표시하지 않습니다.
 
 코드 라이선스: GPL-2.0-or-later. 각 원본 데이터·사진·기사의 이용 조건은 별도로 적용됩니다. GPL/CC0 고지는 `licenses/`를 참조하세요.
 
 ## 데이터 재생성
 
-프로젝트 루트에서 실행합니다. Python 표준 라이브러리만 필요합니다.
+프로젝트 루트에서 실행합니다. 기존 경기 빌더는 Python 표준 라이브러리를 사용하며, 새 보도 수집기는 `beautifulsoup4`, `lxml`이 필요합니다.
 
 ```sh
 python scripts/fetch_data.py
@@ -85,6 +93,35 @@ node tests/verify-world.cjs
 ```
 
 소스 저장소의 미래 변경에 따라 스키마/결과가 달라질 수 있으므로 갱신 후 검증이 필요합니다. 원본 파일은 `research/`에만 보관하고 Git에 추가하지 않습니다. 스냅샷 종료 날짜는 현재 빌더에서 `2026-10-31`로 고정했습니다.
+
+### 보도 자료 수집·검증
+
+```sh
+python -m pip install --target /tmp/football-news-deps beautifulsoup4 lxml
+python scripts/fetch_press_archive.py
+python scripts/fetch_wikinews_football.py
+python scripts/fetch_transfer_press.py
+python scripts/fetch_football_history.py
+python scripts/fetch_historical_reprints.py
+python scripts/verify_historical_cases.py
+python scripts/build_editorial_news.py
+python scripts/build_press_archive.py
+python scripts/build_news_quality.py
+node tests/verify-news.cjs
+```
+
+각 수집기는 `research/news/`의 체크포인트를 사용합니다. 원문 접근이 실패한 항목은 성공 건수에 포함하지 않습니다. Guardian 일별 페이지의 접근 실패 209건을 모두 복구했습니다. FTR-18 미확인 참고 링크 2,760건은 재시도 목록으로 분리했습니다. 외부 연결이 503 또는 연결 종료 오류로 중단되어 일부 원문 확인과 번역을 완료하지 못했으며, 원문과 출처를 유지했습니다.
+
+번역은 선택 작업입니다. 새 복제본에서도 배포된 원문 제목을 읽어 재개할 수 있습니다. 외부 번역에 보내는 내용은 공개 기사 제목과 언어뿐입니다. 이후 번역 캐시를 적용하고 정합성을 다시 검사합니다.
+
+```sh
+python scripts/translate_press_headlines.py
+python scripts/apply_news_translations.py
+python scripts/build_news_quality.py
+node tests/verify-news.cjs
+```
+
+이 명령들은 번역 서비스의 가용성과 이용 조건에 따라 실패할 수 있습니다. 월별 JSON을 수동 편집하기보다 출처·검증 자료와 빌더를 변경하고 재생성하세요. 최초 전체 수집에는 많은 네트워크 요청과 시간이 필요합니다.
 
 ## GitHub Pages
 
