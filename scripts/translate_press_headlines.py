@@ -68,7 +68,7 @@ def source_rows():
             if r.get('titleTranslation') in ['original','names'] and r['id'] not in raw_ids:
                 yield {'title':r['title'],'language':r.get('sourceLanguage','en'),'id':r['id']}
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('--watch',action='store_true');ap.add_argument('--minutes',type=int,default=70);ap.add_argument('--workers',type=int,default=2);ap.add_argument('--interval',type=float,default=.8);args=ap.parse_args();INTERVAL=max(.5,args.interval)
+    ap=argparse.ArgumentParser();ap.add_argument('--watch',action='store_true');ap.add_argument('--minutes',type=int,default=70);ap.add_argument('--workers',type=int,default=2);ap.add_argument('--interval',type=float,default=.8);ap.add_argument('--max-chars',type=int,default=1200);args=ap.parse_args();INTERVAL=max(.5,args.interval)
     db=sqlite3.connect(DB);db.execute('CREATE TABLE IF NOT EXISTS titles (key TEXT PRIMARY KEY, original TEXT, language TEXT, korean TEXT)');db.commit()
     done={r[0] for r in db.execute('SELECT key FROM titles')};failed=set();started=time.time();total=0;errors=0
     while True:
@@ -79,7 +79,7 @@ if __name__=='__main__':
         batches=[];current=[];size=0;language=None
         for row in sorted(pending.values(),key=lambda r:r.get('language','en')):
             lang=row.get('language','en')
-            if current and (size+len(row['title'])>4300 or lang!=language):batches.append(current);current=[];size=0
+            if current and (size+len(row['title'])>args.max_chars or lang!=language):batches.append(current);current=[];size=0
             language=lang;current.append(row);size+=len(row['title'])+1
         if current:batches.append(current)
         consecutive=0
@@ -91,7 +91,7 @@ if __name__=='__main__':
                     done.update(r[0] for r in rows);total+=len(rows);consecutive=0
                 except Exception as e:
                     errors+=1;consecutive+=1;failed.update(key(r['title'],r.get('language','en')) for r in fs[future]);print('Translation unavailable:',str(e),flush=True)
-                if consecutive>=5:
+                if consecutive>=5 or time.time()-started>args.minutes*60:
                     for task in fs:task.cancel()
                     print('Translation service unavailable; stopped this pass and retained original titles.',flush=True)
                     break

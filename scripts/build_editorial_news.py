@@ -22,7 +22,7 @@ def publication(source):
             stamp=dt.datetime.fromisoformat(value.replace('Z','+00:00'))
             if 'skysports.com' in source['url']:
                 stamp=stamp.astimezone(ZoneInfo('Europe/London'));date=stamp.date().isoformat();label='영국 시각'
-            else:label='원문 표준 시각'
+            else:label='한국 시각' if stamp.utcoffset()==dt.timedelta(hours=9) else '원문 표준 시각'
             time=stamp.strftime('%H:%M')
         return date,time,label,value
     m=re.match(r'(\d{1,2})/(\d{1,2})/(\d{4})',value)
@@ -37,6 +37,9 @@ with (ROOT/'data/editorial-news.tsv').open() as f:
         report={k:row[k] for k in ['category','player','origin','dest','status','fee','title','text','context','reaction','watch'] if row.get(k)}
         report.update(id='e-'+hashlib.sha1(host.encode()).hexdigest()[:14],date=date,publishedAt=stamp,publisher=publisher,source=host,kind=row['category'],priority=3 if row['category']=='충격' else 2 if row['category']=='논란' else 1,originalTitle=source['title'].split(' | Football News')[0],basis='구단 공식 발표' if publisher in ['FC Barcelona','Tottenham Hotspur','Liverpool FC'] else '주최기관 보도' if publisher=='UEFA' else '당시 매체 보도',dateBasis='original-datePublished')
         if source.get('author'):report['author']=source['author']
+        report['publicationEvidence']=source.get('dateEvidence') or 'Publisher datePublished metadata'
+        report['sourceModifiedAt']=next(iter(source.get('dateModified') or []),'')
+        report['editionStatus']='later-update-present' if report['sourceModifiedAt'] and report['sourceModifiedAt'][:10]>date else 'original-edition-not-preserved'
         if time:report.update(publishedTime=time,timezoneLabel=label)
         if row.get('match'):
             report['matches']=[dict(zip(['date','home','away'],m.split('~'))) for m in row['match'].split(';')]

@@ -2,13 +2,24 @@
 import collections,csv,json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];P=ROOT/'research/news';OUT=ROOT/'dist/replay/news'
+def with_expansion(q):
+    evidence=ROOT/'data/news-expansion-evidence.json'
+    if evidence.exists():q['expansionEvidence']=json.loads(evidence.read_text())
+    reviewed=ROOT/'data/headline-reviewed.json'
+    if reviewed.exists():q['editorialReview']={'reviewedHeadlineOverrides':len(json.loads(reviewed.read_text())),'scope':'Selected football idioms and score-direction errors, not a human review of all machine translations','glossaryCorrections':['2루타 → 멀티골','클린 시트/깨끗한 시트 → 무실점','victory without trophy/title context: 우승 → 승리']}
+    edition=OUT/'edition-evidence.json'
+    if edition.exists():q['editionEvidence']=json.loads(edition.read_text())
+    for limit in q.get('limitations',[]):
+        if 'translation became unavailable' in limit.get('issue',''):
+            limit.update(issue='Some index titles retain original-language wording. Machine-translated titles are labeled and can contain errors.',remediation='Use reviewed overrides and the football glossary; resume translations from checkpoints when the source is available.')
+    return q
 # A fresh clone carries the published receipt but not the ignored crawl caches.
 # Translation-only updates must not turn known failures into an empty bibliography.
 if not (P/'ftr18/2018_09_26_dataset.json').exists() and (OUT/'quality.json').exists():
     quality=json.loads((OUT/'quality.json').read_text())
     quality['stats']=json.loads((OUT/'index.json').read_text())['stats']
     quality['dataBytesExcludingQualityReceipt']=sum(p.stat().st_size for p in OUT.glob('*.json') if p.name!='quality.json')
-    (OUT/'quality.json').write_text(json.dumps(quality,ensure_ascii=False,indent=2)+'\n')
+    (OUT/'quality.json').write_text(json.dumps(with_expansion(quality),ensure_ascii=False,indent=2)+'\n')
     print('Updated delivery metadata; preserved published collection evidence and unresolved bibliography (raw cache absent).')
     raise SystemExit(0)
 def read(name,default):
@@ -36,5 +47,5 @@ guardian=[]
 for p in (P/'guardian-days').glob('*.json'):
     d=json.loads(p.read_text());guardian.append({'date':d['date'],'status':d['status'],'count':len(d.get('articles',[]))})
 quality={'snapshot':'2026-10-31','grains':{'editorial':'one checked publication and Korean editorial summary','archive':'one deduplicated article URL and source publication day','history':'one source-described event and exact event day'},'stats':stats,'sourceChecks':{'guardianDaysAttempted':10531,'guardianCachedDays':len(guardian),'guardianDaysUnavailable':len(guardian_failures),'guardianStatusCounts':dict(collections.Counter(r['status'] for r in guardian)),'FTR18BibliographySize':len(ftr),'FTR18ResolvedMetadata':len(read('ftr-records.json',[])),'FTR18UnresolvedReasons':dict(collections.Counter(r['reason'] for r in recovery if r.get('dateBasis')=='FTR-18-publication-date')),'wikinewsDatedArticles':len(read('wikinews-records.json',[])),'originalPrintReprints':len(read('reprint-records.json',[])),'historyPagesUnavailable':len(read('history-fetch-failures.json',[]))},'checks':['unique record IDs and canonical article URLs','valid exact dates and monthly partition integrity','day-count reconciliation against all month files','no resolved rumour veracity or later destination labels','separate publication-day news and secondary-history event dates','match-specific and multi-match result spoiler gates','source attribution and explicit machine/original title labels','month-sized delivery budget and six-month browser cache'],'limitations':[{'severity':'high','issue':'Coverage is not all football history or every publisher. Early newspaper access and non-English coverage are uneven.','remediation':'Add licensed newspaper archives or supplied historical clippings with original publication-date evidence.'},{'severity':'high','issue':'Historical article pages may have been updated after initial publication. The link index is the currently available publisher index, not a preserved as-published snapshot.','remediation':'Keep the index distinct from manually checked editorial reports and attach versioned archival evidence when available.'},{'severity':'medium','issue':'External translation became unavailable; untranslated index titles remain in their original language.','remediation':'Retain original titles and exact source URLs; rerun the resumable translator or import approved translations when access is restored.'},{'severity':'medium','issue':'A source-described historical date is not the same as a contemporary newspaper publication date.','remediation':'Display those records only in the separate historical timeline.'},{'severity':'medium','issue':'Unresolved or blocked source references are not silently treated as empty football days.','remediation':'Publish the recovery bibliography separately and exclude it from news totals.'}],'reproducibleChecks':['node tests/verify-news.cjs','node tests/verify-replay.cjs','node tests/verify-world.cjs','node tests/verify-players.cjs'],'dataBytesExcludingQualityReceipt':sum(p.stat().st_size for p in OUT.glob('*.json') if p.name!='quality.json')}
-(OUT/'quality.json').write_text(json.dumps(quality,ensure_ascii=False,indent=2)+'\n')
+(OUT/'quality.json').write_text(json.dumps(with_expansion(quality),ensure_ascii=False,indent=2)+'\n')
 print('Quality receipt saved; unresolved source references:',len(recovery))

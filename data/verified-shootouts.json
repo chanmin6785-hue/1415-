@@ -1,0 +1,14 @@
+[
+  {
+    "date":"2005-05-25","teams":["Milan","Liverpool"],
+    "source":"https://www.11v11.com/matches/ac-milan-v-liverpool-25-may-2005-197776/",
+    "corroboration":"https://www.uefa.com/newsfiles/368100.pdf",
+    "kicks":[["Milan","Serginho","missed"],["Liverpool","Dietmar Hamann","scored"],["Milan","Andrea Pirlo","saved"],["Liverpool","Djibril Cissé","scored"],["Milan","Jon Dahl Tomasson","scored"],["Liverpool","John Arne Riise","saved"],["Milan","Kaká","scored"],["Liverpool","Vladimír Šmicer","scored"],["Milan","Andriy Shevchenko","saved"]]
+  },
+  {
+    "date":"2022-12-18","teams":["Argentina","France"],
+    "source":"https://www.fifa.com/es/articles/argentina-le-gano-por-penales-a-francia-y-se-consagro-campeon-del-mundo",
+    "corroboration":"https://www.bbc.co.uk/sport/live/football/64021392?page=8",
+    "kicks":[["France","Kylian Mbappé","scored"],["Argentina","Lionel Messi","scored"],["France","Kingsley Coman","saved"],["Argentina","Paulo Dybala","scored"],["France","Aurélien Tchouaméni","missed"],["Argentina","Leandro Paredes","scored"],["France","Randal Kolo Muani","scored"],["Argentina","Gonzalo Montiel","scored"]]
+  }
+]

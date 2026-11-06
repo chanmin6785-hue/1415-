@@ -1,0 +1,179 @@
+{
+  "Q18543": {
+    "label": "Major League Soccer",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "source": "https://www.wikidata.org/entity/Q18543"
+  },
+  "Q19510": {
+    "label": "EFL Championship",
+    "countries": [
+      "United Kingdom"
+    ],
+    "source": "https://www.wikidata.org/entity/Q19510"
+  },
+  "Q19565": {
+    "label": "EFL League One",
+    "countries": [
+      "United Kingdom"
+    ],
+    "source": "https://www.wikidata.org/entity/Q19565"
+  },
+  "Q48837": {
+    "label": "EFL League Two",
+    "countries": [
+      "United Kingdom"
+    ],
+    "source": "https://www.wikidata.org/entity/Q48837"
+  },
+  "Q152665": {
+    "label": "2. Bundesliga",
+    "countries": [
+      "Germany"
+    ],
+    "source": "https://www.wikidata.org/entity/Q152665"
+  },
+  "Q187304": {
+    "label": "Scottish Premier League",
+    "countries": [
+      "United Kingdom"
+    ],
+    "source": "https://www.wikidata.org/entity/Q187304"
+  },
+  "Q201671": {
+    "label": "Eliteserien",
+    "countries": [
+      "Norway"
+    ],
+    "source": "https://www.wikidata.org/entity/Q201671"
+  },
+  "Q202243": {
+    "label": "Allsvenskan",
+    "countries": [
+      "Sweden"
+    ],
+    "source": "https://www.wikidata.org/entity/Q202243"
+  },
+  "Q202699": {
+    "label": "Swiss Super League",
+    "countries": [
+      "Switzerland",
+      "Liechtenstein"
+    ],
+    "source": "https://www.wikidata.org/entity/Q202699"
+  },
+  "Q204752": {
+    "label": "Danish Superliga",
+    "countries": [
+      "Denmark"
+    ],
+    "source": "https://www.wikidata.org/entity/Q204752"
+  },
+  "Q206813": {
+    "label": "Campeonato Brasileiro Série A",
+    "countries": [
+      "Brazil"
+    ],
+    "source": "https://www.wikidata.org/entity/Q206813"
+  },
+  "Q209318": {
+    "label": "Chinese Super League",
+    "countries": [
+      "People's Republic of China"
+    ],
+    "source": "https://www.wikidata.org/entity/Q209318"
+  },
+  "Q216022": {
+    "label": "Belgian Pro League",
+    "countries": [
+      "Belgium"
+    ],
+    "source": "https://www.wikidata.org/entity/Q216022"
+  },
+  "Q220875": {
+    "label": "Veikkausliiga",
+    "countries": [
+      "Finland"
+    ],
+    "source": "https://www.wikidata.org/entity/Q220875"
+  },
+  "Q223170": {
+    "label": "Argentine Primera División",
+    "countries": [
+      "Argentina"
+    ],
+    "source": "https://www.wikidata.org/entity/Q223170"
+  },
+  "Q235114": {
+    "label": "Super League Greece",
+    "countries": [
+      "Greece"
+    ],
+    "source": "https://www.wikidata.org/entity/Q235114"
+  },
+  "Q276445": {
+    "label": "J1 League",
+    "countries": [
+      "Japan"
+    ],
+    "source": "https://www.wikidata.org/entity/Q276445"
+  },
+  "Q485568": {
+    "label": "Süper Lig",
+    "countries": [
+      "Turkey"
+    ],
+    "source": "https://www.wikidata.org/entity/Q485568"
+  },
+  "Q764690": {
+    "label": "Liga MX",
+    "countries": [
+      "Mexico"
+    ],
+    "source": "https://www.wikidata.org/entity/Q764690"
+  },
+  "Q769744": {
+    "label": "Football League Second Division",
+    "countries": [
+      "United Kingdom"
+    ],
+    "source": "https://www.wikidata.org/entity/Q769744"
+  },
+  "Q831202": {
+    "label": "League of Ireland Premier Division",
+    "countries": [
+      "Ireland"
+    ],
+    "source": "https://www.wikidata.org/entity/Q831202"
+  },
+  "Q2180367": {
+    "label": "Süper Lig",
+    "countries": [
+      "Northern Cyprus"
+    ],
+    "source": "https://www.wikidata.org/entity/Q2180367"
+  },
+  "Q2386334": {
+    "label": "K League 1",
+    "countries": [
+      "South Korea"
+    ],
+    "source": "https://www.wikidata.org/entity/Q2386334"
+  },
+  "Q5100359": {
+    "label": "K League 2",
+    "countries": [
+      "South Korea"
+    ],
+    "source": "https://www.wikidata.org/entity/Q5100359"
+  },
+  "Q14377162": {
+    "label": "Scottish Premiership",
+    "countries": [
+      "United Kingdom"
+    ],
+    "source": "https://www.wikidata.org/entity/Q14377162"
+  }
+}

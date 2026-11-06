@@ -21,3 +21,9 @@ const grouped=new Map();
 for(const p of catalogue.players)if(data.players[p.id]){if(!grouped.has(p.name))grouped.set(p.name,new Set());grouped.get(p.name).add(data.players[p.id]);}
 for(const [name,labels] of grouped)if(labels.size>1)assert.equal(data.playerNames[name],undefined,'Ambiguous scorer name: '+name);
 console.log(`PASS: Korean identity aliases, unknown-name fallback, current-crest labels, ${Object.keys(data.competitions).length} competitions and ${assets.size} referenced local assets.`);
+
+const periods=Object.values(data.crestHistory).flat();assert.equal(periods.length,11);for(const p of periods){assert(fs.statSync(path.join(root,p.crest)).size>100);assert(p.from<=p.to);assert(p.source.startsWith('https://'));}
+evaluate('globalThis.state={date:"2012-05-13"}');assert(evaluate('crestHTML("Manchester City")').includes('manchester-city-1997.png'));assert(evaluate('crestHTML("Manchester City")').includes('당시 엠블럼'));evaluate('state.date="1956-06-13"');assert(evaluate('crestHTML("Manchester City")').includes('현재 엠블럼'));
+console.log('PASS: 11 temporal crest periods and explicit unverified-period fallback.');
+
+assert.notEqual(evaluate('localeKey("전북")'),evaluate('localeKey("서울")'));assert.equal(evaluate('localeKey("전북")'),'전북');assert.equal(evaluate('koreanName("미수록한국팀")'),'미수록한국팀');assert.equal(evaluate('koreanName("")'),'');assert(evaluate('crestHTML("전북")').includes('6502.png'));assert(!evaluate('crestHTML("전북")').includes('932.png'));console.log('PASS: distinct Hangul team identity, correct Jeonbuk crest and unknown Korean fallback.');

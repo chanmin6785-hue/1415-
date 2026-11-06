@@ -1762,5 +1762,138 @@
     "publisher": "연합뉴스 영문판",
     "author": null,
     "dateEvidence": "Publisher dateline checked on source page: 2024-07-08"
+  },
+  {
+    "url": "https://imnews.imbc.com/replay/1989/nwdesk/article/1827754_30391.html",
+    "title": "대한민국, 사우디를 꺾고 이탈리아 월드컵 본선행 확정",
+    "datePublished": [
+      "1989-10-25"
+    ],
+    "dateModified": [],
+    "publisher": "MBC",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
+  },
+  {
+    "url": "https://imnews.imbc.com/replay/1994/nwdesk/article/1931507_30690.html",
+    "title": "한국 대표팀, 볼리비아전을 앞두고 보스턴으로 이동",
+    "datePublished": [
+      "1994-06-19"
+    ],
+    "dateModified": [],
+    "publisher": "MBC",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
+  },
+  {
+    "url": "https://www.seoul.co.kr/news/1998/06/22/19980622001001",
+    "title": "차범근 감독 경질…월드컵 대회 도중 사령탑 교체",
+    "datePublished": [
+      "1998-06-22T00:00:00+09:00"
+    ],
+    "dateModified": [],
+    "publisher": "서울신문",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
+  },
+  {
+    "url": "https://imnews.imbc.com/replay/2011/nw2400/2860563_30494.html",
+    "title": "승부조작 파문에 프로축구 선수·코칭스태프 비상 소집",
+    "datePublished": [
+      "2011-05-31T00:00:00+09:00"
+    ],
+    "dateModified": [
+      "2011-06-01T12:16:00+09:00"
+    ],
+    "publisher": "MBC",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
+  },
+  {
+    "url": "https://www.khan.co.kr/article/201105292143145",
+    "title": "승부조작 수사, 연루 의혹 선수로 범위 확대",
+    "datePublished": [
+      "2011-05-29"
+    ],
+    "dateModified": [],
+    "publisher": "경향신문",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
+  },
+  {
+    "url": "https://imnews.imbc.com/replay/2022/nwdesk/article/6371442_35744.html",
+    "title": "손흥민, 아시아 선수 최초 프리미어리그 공동 득점왕",
+    "datePublished": [
+      "2022-05-23T19:58:00+09:00"
+    ],
+    "dateModified": [
+      "2022-05-23T20:35:00+09:00"
+    ],
+    "publisher": "MBC",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
+  },
+  {
+    "url": "https://imnews.imbc.com/replay/2022/nwdesk/article/6371443_35744.html",
+    "title": "득점왕 손흥민을 향한 동료와 팬의 반응",
+    "datePublished": [
+      "2022-05-23T19:59:00+09:00"
+    ],
+    "dateModified": [
+      "2022-05-23T22:00:00+09:00"
+    ],
+    "publisher": "MBC",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
+  },
+  {
+    "url": "https://www.kukinews.com/article/view/kuk202303280209",
+    "title": "축구협회, 승부조작 징계자 48명 포함 100명 사면 결정",
+    "datePublished": [
+      "2023-03-28T19:29:55+09:00"
+    ],
+    "dateModified": [],
+    "publisher": "쿠키뉴스",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
+  },
+  {
+    "url": "https://www.donga.com/news/Sports/article/all/20230331/118608728/1",
+    "title": "붉은악마, 사면 철회 없으면 경기 보이콧 경고",
+    "datePublished": [
+      "2023-03-31T03:00:00+09:00"
+    ],
+    "dateModified": [
+      "2023-03-31T03:38:00+09:00"
+    ],
+    "publisher": "동아일보",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
+  },
+  {
+    "url": "https://imnews.imbc.com/news/2023/sports/article/6469630_36154.html",
+    "title": "축구협회, 임시이사회에서 징계 사면 전면 철회",
+    "datePublished": [
+      "2023-03-31T17:14:00+09:00"
+    ],
+    "dateModified": [
+      "2023-03-31T17:14:00+09:00"
+    ],
+    "publisher": "MBC",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
+  },
+  {
+    "url": "https://imnews.imbc.com/replay/2023/nwdesk/article/6469684_36199.html",
+    "title": "사면 철회 뒤 축구협회 설명…팬들의 비판은 계속",
+    "datePublished": [
+      "2023-03-31T20:34:00+09:00"
+    ],
+    "dateModified": [
+      "2023-03-31T20:34:00+09:00"
+    ],
+    "publisher": "MBC",
+    "author": null,
+    "dateEvidence": "발행사 원문 입력·승인 날짜와 시각 확인. 시각 없는 항목은 날짜만 보존."
   }
 ]

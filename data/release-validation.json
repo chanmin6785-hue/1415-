@@ -1,0 +1,20 @@
+{
+  "release": "2026-11-06",
+  "dataCutoff": "2026-10-31",
+  "majorMatches": 143674,
+  "eventReplays": 89644,
+  "recapEntries": 7142,
+  "checks": [
+    "verify-replay",
+    "verify-world",
+    "verify-localization",
+    "verify-players",
+    "verify-expansion",
+    "verify-news",
+    "verify-season-recaps",
+    "browser-core-flows",
+    "browser-season-recap"
+  ],
+  "status": "passed in local build",
+  "productionStatus": "verified separately after publication"
+}

@@ -1,0 +1,194 @@
+{
+  "files": [
+    {
+      "path": "schochastics/aut-bundesliga.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/aut-bundesliga.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/bel-pro-league.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/bel-pro-league.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/bundesliga.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/bundesliga.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/champions-league.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/champions-league.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/cze-1-fotbalova-liga.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/cze-1-fotbalova-liga.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/dfb-pokal.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/dfb-pokal.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/eng-fa-cup.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/eng-fa-cup.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/eng-league-cup.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/eng-league-cup.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/eng-premier-league.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/eng-premier-league.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/esp-copa-del-rey.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/esp-copa-del-rey.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/esp-primera-division.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/esp-primera-division.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/europa-league.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/europa-league.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/fra-coupe-de-france.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/fra-coupe-de-france.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/fra-ligue-1.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/fra-ligue-1.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/gre-super-league.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/gre-super-league.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/ita-serie-a.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/ita-serie-a.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/ned-eredivisie.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/ned-eredivisie.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/nor-eliteserien.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/nor-eliteserien.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/pol-ekstraklasa.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/pol-ekstraklasa.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/por-primeira-liga.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/por-primeira-liga.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/sco-premiership.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/sco-premiership.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/sui-super-league.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/sui-super-league.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "schochastics/tur-sueperlig.csv",
+      "url": "https://raw.githubusercontent.com/schochastics/football-data/master/data/goals_time/tur-sueperlig.csv",
+      "license": "ODC-By-1.0"
+    },
+    {
+      "path": "worldcup/matches.csv",
+      "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/matches.csv",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "worldcup/goals.csv",
+      "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/goals.csv",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "worldcup/players.csv",
+      "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/players.csv",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "worldcup/squads.csv",
+      "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/squads.csv",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "worldcup/player_appearances.csv",
+      "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/player_appearances.csv",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "worldcup/bookings.csv",
+      "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/bookings.csv",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "worldcup/substitutions.csv",
+      "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/substitutions.csv",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "worldcup/teams.csv",
+      "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/teams.csv",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "path": "games.download",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/davidcariboo/player-scores/games.csv",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "game_events.download",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/davidcariboo/player-scores/game_events.csv",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "game_lineups.download",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/davidcariboo/player-scores/game_lineups.csv",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "player-names.csv",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/davidcariboo/player-scores/players.csv",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "international-goals.csv",
+      "url": "https://raw.githubusercontent.com/martj42/international_results/master/goalscorers.csv",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "appearances.csv",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/davidcariboo/player-scores/appearances.csv",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "transfers.csv",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/davidcariboo/player-scores/transfers.csv",
+      "license": "CC0-1.0"
+    }
+  ]
+}

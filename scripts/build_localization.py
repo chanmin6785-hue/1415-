@@ -4,6 +4,7 @@ from pathlib import Path
 P=Path('research/localization');O=Path('dist/replay')
 def norm(s):
  s=''.join(c for c in unicodedata.normalize('NFKD',s).lower() if not unicodedata.combining(c))
+ s=unicodedata.normalize('NFC',s)
  s=re.sub(r'\b(fc|cf|afc|ac|as|ss|ssc|sc|sv|fk|club|football|calcio|societa|sportiva|spa|sad|srl)\b',' ',s)
  return re.sub(r'[^a-z0-9가-힣]','',s)
 manual={}

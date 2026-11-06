@@ -1,0 +1,13 @@
+{
+  "translationPass": {
+    "additionalCachedTranslations": 19032,
+    "endingCachedTitles": 111656,
+    "stopReason": "Repeated connection closure; originals retained"
+  },
+  "originalEditionEvidence": {
+    "sameDayVerifiedSnapshots": 0,
+    "stopReason": "Public archive metadata returned HTTP 403; no bypass attempted"
+  },
+  "verifiedKoreanEditorialAdditions": 11,
+  "reviewScope": "Selected headline idioms and score-direction errors; not a human review of all machine translations"
+}

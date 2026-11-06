@@ -5,6 +5,7 @@ ROOT=Path(__file__).resolve().parents[1];P=ROOT/'research/news';OUT=ROOT/'dist/r
 db=sqlite3.connect(P/'translations.sqlite')
 db.execute('CREATE TABLE IF NOT EXISTS titles (key TEXT PRIMARY KEY, original TEXT, language TEXT, korean TEXT)')
 translations={r[0]:r[1] for r in db.execute('SELECT key,korean FROM titles')}
+reviewed_titles=json.loads((ROOT/'data/headline-reviewed.json').read_text())
 reprint_titles=json.loads((ROOT/'data/reprint-title-overrides.json').read_text())
 locale=json.loads((ROOT/'dist/replay/localization.json').read_text())
 person_names={k:v for k,v in locale['playerNames'].items() if len(k)>5 and ' ' in k}
@@ -30,7 +31,10 @@ def translated(text,lang='en'):
     if lang=='ko':return text,False
     key=hashlib.sha256((lang+'\0'+text).encode()).hexdigest();ko=translations.get(key,'')
     if not ko:return '',False
-    return replace_known_names(ko),True
+    ko=replace_known_names(ko)
+    for wrong,right in [('2루타','멀티골'),('클린 시트','무실점'),('깨끗한 시트','무실점'),('햇트릭','해트트릭')]:ko=ko.replace(wrong,right)
+    if re.search(r'\bvictory\b',text,re.I) and not re.search(r'\b(title|champions?|cup|trophy)\b',text,re.I):ko=ko.replace('우승','승리')
+    return ko,True
 def canonical(url):
     p=urllib.parse.urlsplit(url);query=urllib.parse.parse_qsl(p.query,keep_blank_values=True)
     query=[(k,v) for k,v in query if not k.startswith('utm_') and k not in ['fbclid','CMP','amp']]
@@ -59,7 +63,7 @@ def add_article(row):
     key=canonical(source)
     if key in seen or key in editorial_sources:return
     seen.add(key);cat,market=category(row);ko,auto=translated(title,row.get('language','en'))
-    edited=reprint_titles.get(row['id'])
+    edited=reprint_titles.get(row['id']) or reviewed_titles.get(title)
     if edited:ko,auto=edited,False
     if ko:localized+=1
     else:missing+=1

@@ -1,0 +1,228 @@
+{
+  "playmakerSource": "https://www.premierleague.com/en/news/1206143/premier-league-playmaker-award-winners",
+  "playmakers": [
+    [
+      2017,
+      "Kevin De Bruyne",
+      16
+    ],
+    [
+      2018,
+      "Eden Hazard",
+      15
+    ],
+    [
+      2019,
+      "Kevin De Bruyne",
+      20
+    ],
+    [
+      2020,
+      "Harry Kane",
+      14
+    ],
+    [
+      2021,
+      "Mohamed Salah",
+      13
+    ],
+    [
+      2022,
+      "Kevin De Bruyne",
+      16
+    ],
+    [
+      2023,
+      "Ollie Watkins",
+      13
+    ],
+    [
+      2024,
+      "Mohamed Salah",
+      18
+    ],
+    [
+      2025,
+      "Bruno Fernandes",
+      21
+    ]
+  ],
+  "ballonSource": "https://www.uefa.com/ballondor/news/0287-195e642735da-0594342b9554-1000--history-of-the-ball-on-d-or-all-the-winners/",
+  "ballonDates": {
+    "1956": "1956-12-18",
+    "2009": "2009-12-01",
+    "2010": "2011-01-10",
+    "2011": "2012-01-09",
+    "2012": "2013-01-07",
+    "2013": "2014-01-13",
+    "2014": "2015-01-12",
+    "2015": "2016-01-11",
+    "2016": "2016-12-12",
+    "2017": "2017-12-07",
+    "2018": "2018-12-03",
+    "2019": "2019-12-02",
+    "2020": "2020-07-20",
+    "2021": "2021-11-29",
+    "2022": "2022-10-17",
+    "2023": "2023-10-30",
+    "2024": "2024-10-28",
+    "2025": "2025-09-22",
+    "2026": "2026-10-26"
+  },
+  "ballonDatePolicy": "Dates are ceremony/publication or cancellation announcement dates; award year remains separate. Earlier unspecified awards are shown at year end and labeled year precision.",
+  "administrativeCases": [
+    {
+      "league": "italy",
+      "season": 2004,
+      "date": "2006-07-26",
+      "title": "2004/05 세리에 A 우승 취소 · 우승 팀 없음",
+      "text": "유벤투스의 2004/05 우승은 박탈됐고 해당 시즌 우승 팀은 정해지지 않았다. 종료 당시 순위와 후일의 행정 결정을 구분한다.",
+      "source": "https://es.uefa.com/news-media/news/01b7-0f8eee3d275a-58d0ed76f852-1000--el-inter-nuevo-campeon-de-liga/"
+    },
+    {
+      "league": "italy",
+      "season": 2005,
+      "date": "2006-07-26",
+      "title": "2005/06 세리에 A 우승, 인테르에 부여",
+      "winner": "Inter",
+      "text": "시즌 종료 뒤 이뤄진 행정 결정이다. 우승 확정 시점을 시즌 마지막 경기일로 앞당기지 않는다.",
+      "source": "https://es.uefa.com/news-media/news/01b7-0f8eee3d275a-58d0ed76f852-1000--el-inter-nuevo-campeon-de-liga/"
+    }
+  ],
+  "worldCupGoldenBootSource": "https://fbref.com/en/awards/wc_golden_boot/FIFA-World-Cup-Golden-Boot",
+  "worldCupGoldenBoot": [
+    [
+      1958,
+      [
+        "Just Fontaine"
+      ],
+      13
+    ],
+    [
+      1962,
+      [
+        "Garrincha",
+        "Vavá",
+        "Dražan Jerković",
+        "Leonel Sánchez",
+        "Flórián Albert",
+        "Valentin Ivanov"
+      ],
+      4
+    ],
+    [
+      1966,
+      [
+        "Eusébio"
+      ],
+      9
+    ],
+    [
+      1970,
+      [
+        "Gerd Müller"
+      ],
+      10
+    ],
+    [
+      1974,
+      [
+        "Grzegorz Lato"
+      ],
+      7
+    ],
+    [
+      1978,
+      [
+        "Mario Kempes"
+      ],
+      6
+    ],
+    [
+      1982,
+      [
+        "Paolo Rossi"
+      ],
+      6
+    ],
+    [
+      1986,
+      [
+        "Gary Lineker"
+      ],
+      6
+    ],
+    [
+      1990,
+      [
+        "Salvatore Schillaci"
+      ],
+      6
+    ],
+    [
+      1994,
+      [
+        "Oleg Salenko",
+        "Hristo Stoichkov"
+      ],
+      6
+    ],
+    [
+      1998,
+      [
+        "Davor Šuker"
+      ],
+      6
+    ],
+    [
+      2002,
+      [
+        "Ronaldo"
+      ],
+      8
+    ],
+    [
+      2006,
+      [
+        "Miroslav Klose"
+      ],
+      5
+    ],
+    [
+      2010,
+      [
+        "Thomas Müller"
+      ],
+      5
+    ],
+    [
+      2014,
+      [
+        "James Rodríguez"
+      ],
+      6
+    ],
+    [
+      2018,
+      [
+        "Harry Kane"
+      ],
+      6
+    ],
+    [
+      2022,
+      [
+        "Kylian Mbappé"
+      ],
+      8
+    ],
+    [
+      2026,
+      [
+        "Kylian Mbappé"
+      ],
+      10
+    ]
+  ],
+  "ballonCriteriaSource": "https://www.lequipe.fr/France-Football/Actualites/Ballon-d-or-quatre-changements-pour-l-histoire/1321452"
+}

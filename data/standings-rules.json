@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "datePolicy": "Decisions apply after their announced day is closed; revisions replace the same case, independent cases add.",
+  "adjustments": [
+    {
+      "case": "everton-psr-2022",
+      "league": "england",
+      "season": 2023,
+      "team": "Everton",
+      "date": "2023-11-17",
+      "points": -10,
+      "source": "https://www.premierleague.com/en/news/3788486",
+      "title": "에버턴: PSR 위반 10점 삭감",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "everton-psr-2022",
+      "league": "england",
+      "season": 2023,
+      "team": "Everton",
+      "date": "2024-02-26",
+      "points": -6,
+      "source": "https://www.premierleague.com/en/news/3912574/article",
+      "title": "에버턴: 항소로 같은 사건의 삭감이 6점으로 변경",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "everton-psr-2023",
+      "league": "england",
+      "season": 2023,
+      "team": "Everton",
+      "date": "2024-04-08",
+      "points": -2,
+      "source": "https://www.premierleague.com/en/news/3960088",
+      "title": "에버턴: 별도 PSR 사건 2점 삭감",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "forest-psr-2023",
+      "league": "england",
+      "season": 2023,
+      "team": "Nottingham Forest",
+      "date": "2024-03-18",
+      "points": -4,
+      "source": "https://www.premierleague.com/en/news/3936397",
+      "title": "노팅엄 포리스트: PSR 위반 4점 삭감",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "portsmouth-admin",
+      "league": "england",
+      "season": 2009,
+      "team": "Portsmouth",
+      "date": "2010-03-17",
+      "points": -9,
+      "source": "https://www.skysports.com/football/news/6032234/pompey-deducted-nine-points",
+      "title": "포츠머스: 관리 절차에 따른 9점 삭감",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "middlesbrough-postponement",
+      "league": "england",
+      "season": 1996,
+      "team": "Middlesbrough",
+      "date": "1997-01-14",
+      "points": -3,
+      "source": "https://www.11v11.com/league-tables/premier-league/23-january-1997/",
+      "title": "미들즈브러: 경기 취소 관련 3점 삭감",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "juventus-capital-gains",
+      "league": "italy",
+      "season": 2022,
+      "team": "Juventus",
+      "date": "2023-01-20",
+      "points": -15,
+      "source": "https://www.juventus.com/en/news/articles/press-release",
+      "title": "유벤투스: 15점 삭감 결정",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "juventus-capital-gains",
+      "league": "italy",
+      "season": 2022,
+      "team": "Juventus",
+      "date": "2023-04-20",
+      "points": 0,
+      "source": "https://www.bbc.co.uk/sport/football/65329536",
+      "title": "유벤투스: 재심에 따라 15점 삭감 효력 중단",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "juventus-capital-gains",
+      "league": "italy",
+      "season": 2022,
+      "team": "Juventus",
+      "date": "2023-05-22",
+      "points": -10,
+      "source": "https://www.figc.it/it/federazione/news/caso-plusvalenze-dieci-punti-di-penalizzazione-per-la-juventus-da-scontare-nella-corrente-stagione-sportiva/",
+      "title": "유벤투스: 재심 뒤 10점 삭감",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "calciopoli-milan",
+      "league": "italy",
+      "season": 2006,
+      "team": "AC Milan",
+      "date": "2006-07-25",
+      "points": -8,
+      "source": "https://www.uefa.com/news-media/news/01b7-0f8eee36c65e-730a3fda3edf-1000--fiorentina-and-lazio-reprieved/",
+      "title": "AC 밀란: 2006/07 시즌 8점 삭감",
+      "aliases": [
+        "Milan"
+      ],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "calciopoli-fiorentina",
+      "league": "italy",
+      "season": 2006,
+      "team": "Fiorentina",
+      "date": "2006-07-25",
+      "points": -19,
+      "source": "https://www.uefa.com/news-media/news/01b7-0f8eee36c65e-730a3fda3edf-1000--fiorentina-and-lazio-reprieved/",
+      "title": "피오렌티나: 항소 결정으로 세리에 A 잔류·19점 삭감",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "calciopoli-lazio",
+      "league": "italy",
+      "season": 2006,
+      "team": "Lazio",
+      "date": "2006-07-25",
+      "points": -11,
+      "source": "https://www.uefa.com/news-media/news/01b7-0f8eee36c65e-730a3fda3edf-1000--fiorentina-and-lazio-reprieved/",
+      "title": "라치오: 항소 결정으로 세리에 A 잔류·11점 삭감",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "calciopoli-fiorentina",
+      "league": "italy",
+      "season": 2006,
+      "team": "Fiorentina",
+      "date": "2006-10-27",
+      "points": -15,
+      "source": "https://m.rediff.com/sports/report/juve/20061028.htm",
+      "title": "피오렌티나: 중재로 삭감이 15점으로 변경",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "calciopoli-lazio",
+      "league": "italy",
+      "season": 2006,
+      "team": "Lazio",
+      "date": "2006-10-27",
+      "points": -3,
+      "source": "https://m.rediff.com/sports/report/juve/20061028.htm",
+      "title": "라치오: 중재로 삭감이 3점으로 변경",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "calciopoli-reggina",
+      "league": "italy",
+      "season": 2006,
+      "team": "Reggina",
+      "date": "2006-08-17",
+      "points": -15,
+      "source": "https://www.gazzetta.it/Calcio/Squadre/Reggina/Primo_Piano/2006/08_Agosto/17/sentenza.shtml",
+      "title": "레지나: 15점 삭감",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "calciopoli-reggina",
+      "league": "italy",
+      "season": 2006,
+      "team": "Reggina",
+      "date": "2006-12-12",
+      "points": -11,
+      "source": "https://www.worldsoccer.com/world-soccer-latest/reggina-match-fixing-penalty-reduced-103155",
+      "title": "레지나: 삭감이 11점으로 변경",
+      "aliases": [],
+      "datePolicy": "after-day-close"
+    },
+    {
+      "case": "jeonbuk-referee-bribery",
+      "league": "korea",
+      "season": 2016,
+      "team": "Jeonbuk Hyundai Motors",
+      "date": "2016-09-30",
+      "points": -9,
+      "source": "https://en.yna.co.kr/view/AEN20160930002651315",
+      "title": "전북: 심판 매수 사건 관련 9점 삭감",
+      "aliases": [
+        "Jeonbuk",
+        "전북 현대 모터스",
+        "Jeonbuk Hyundai",
+        "전북"
+      ],
+      "datePolicy": "after-day-close"
+    }
+  ],
+  "rules": [
+    {
+      "league": "england",
+      "sort": "goal-difference",
+      "source": "https://www.premierleague.com/en/news/4638902/the-run-in-202526-your-title-race-questions-answered",
+      "coverage": "core; disciplinary and drawing-lots criteria remain unresolved",
+      "from": 1976
+    },
+    {
+      "league": "spain",
+      "sort": "head-to-head",
+      "source": "https://en.wikipedia.org/wiki/La_Liga#Tie_breaker_rules",
+      "coverage": "core; disciplinary and drawing-lots criteria remain unresolved",
+      "from": 1995
+    },
+    {
+      "league": "italy",
+      "sort": "head-to-head",
+      "source": "https://www.fifa.com/it/articles/serie-a-ufficiale-lo-spareggio-scudetto-in-caso-di-arrivo-a-pari-punti",
+      "coverage": "core; disciplinary and drawing-lots criteria remain unresolved",
+      "from": 2005
+    },
+    {
+      "league": "korea",
+      "sort": "goals-for",
+      "source": "https://en.wikipedia.org/wiki/2016_K_League_Classic",
+      "coverage": "core; disciplinary and drawing-lots criteria remain unresolved",
+      "from": 2016
+    },
+    {
+      "league": "germany",
+      "sort": "goal-difference",
+      "source": "https://www.bundesliga.com/en/faq",
+      "coverage": "core; disciplinary and drawing-lots criteria remain unresolved",
+      "from": 1963
+    }
+  ],
+  "bonuses": [
+    {
+      "league": "france",
+      "from": 1973,
+      "to": 1973,
+      "kind": "three-goals",
+      "source": "https://www.lemonde.fr/archives/article/1973/05/24/une-bonification-au-nombre-de-buts-marques-pour-le-championnat-de-france-1973-1974_2570721_1819218.html"
+    },
+    {
+      "league": "france",
+      "from": 1974,
+      "to": 1975,
+      "kind": "three-goal-winning-margin",
+      "source": "https://fr.wikipedia.org/wiki/Championnat_de_France_de_football_1974-1975"
+    }
+  ],
+  "limitations": "Dated verified cases; not an exhaustive list of every administrative sanction. Unresolved ties are displayed as ties, not decided by alphabetical order."
+}
