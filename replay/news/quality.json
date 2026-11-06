@@ -6,14 +6,14 @@
     "history": "one source-described event and exact event day"
   },
   "stats": {
-    "editorialReports": 137,
+    "editorialReports": 148,
     "archiveLinks": 210583,
     "historicalRecords": 5222,
-    "datedEditions": 10196,
-    "sourceOrganizations": 63,
-    "localizedIndexTitles": 100091,
-    "originalTitleFallbacks": 110492,
-    "nameLocalizedIndexTitles": 64553,
+    "datedEditions": 10199,
+    "sourceOrganizations": 68,
+    "localizedIndexTitles": 119290,
+    "originalTitleFallbacks": 91293,
+    "nameLocalizedIndexTitles": 54387,
     "bySource": {
       "The Guardian": 208866,
       "The Observer": 2,
@@ -83,8 +83,8 @@
       "published-dateline": 487,
       "FTR-18-publication-date": 1229
     },
-    "monthlyDataBytes": 94637185,
-    "largestMonthBytes": 645284,
+    "monthlyDataBytes": 95022553,
+    "largestMonthBytes": 645366,
     "coverageByYear": {
       "1956": {
         "events": 2
@@ -199,7 +199,8 @@
       },
       "1989": {
         "articles": 1,
-        "events": 145
+        "events": 145,
+        "editorials": 1
       },
       "1990": {
         "events": 166
@@ -216,7 +217,8 @@
         "events": 198
       },
       "1994": {
-        "events": 188
+        "events": 188,
+        "editorials": 1
       },
       "1995": {
         "events": 201
@@ -229,7 +231,8 @@
       },
       "1998": {
         "articles": 712,
-        "events": 79
+        "events": 79,
+        "editorials": 1
       },
       "1999": {
         "articles": 4546,
@@ -289,7 +292,7 @@
       "2011": {
         "articles": 9050,
         "events": 97,
-        "editorials": 2
+        "editorials": 4
       },
       "2012": {
         "articles": 9186,
@@ -344,12 +347,12 @@
       "2022": {
         "articles": 7266,
         "events": 63,
-        "editorials": 8
+        "editorials": 10
       },
       "2023": {
         "articles": 7379,
         "events": 59,
-        "editorials": 3
+        "editorials": 7
       },
       "2024": {
         "articles": 7350,
@@ -411,8 +414,8 @@
     },
     {
       "severity": "medium",
-      "issue": "External translation became unavailable; untranslated index titles remain in their original language.",
-      "remediation": "Retain original titles and exact source URLs; rerun the resumable translator or import approved translations when access is restored."
+      "issue": "Some index titles retain original-language wording. Machine-translated titles are labeled and can contain errors.",
+      "remediation": "Use reviewed overrides and the football glossary; resume translations from checkpoints when the source is available."
     },
     {
       "severity": "medium",
@@ -431,5 +434,37 @@
     "node tests/verify-world.cjs",
     "node tests/verify-players.cjs"
   ],
-  "dataBytesExcludingQualityReceipt": 95836021
+  "dataBytesExcludingQualityReceipt": 96254197,
+  "expansionEvidence": {
+    "translationPass": {
+      "additionalCachedTranslations": 19032,
+      "endingCachedTitles": 111656,
+      "stopReason": "Repeated connection closure; originals retained"
+    },
+    "originalEditionEvidence": {
+      "sameDayVerifiedSnapshots": 0,
+      "stopReason": "Public archive metadata returned HTTP 403; no bypass attempted"
+    },
+    "verifiedKoreanEditorialAdditions": 11,
+    "reviewScope": "Selected headline idioms and score-direction errors; not a human review of all machine translations"
+  },
+  "editorialReview": {
+    "reviewedHeadlineOverrides": 19,
+    "scope": "Selected football idioms and score-direction errors, not a human review of all machine translations",
+    "glossaryCorrections": [
+      "2루타 → 멀티골",
+      "클린 시트/깨끗한 시트 → 무실점",
+      "victory without trophy/title context: 우승 → 승리"
+    ]
+  },
+  "editionEvidence": {
+    "reports": {},
+    "failures": [
+      {
+        "source": "https://www.uefa.com/uefachampionsleague/news/0161-0e6a261d85bb-05dbbb7741b5-1000--united-super-subs-floor-bayern-at-the-death/",
+        "error": "HTTP Error 429: Too Many Requests"
+      }
+    ],
+    "notice": "A capture on publication day is evidence of that dated version, not proof of the earliest revision or publication time."
+  }
 }
